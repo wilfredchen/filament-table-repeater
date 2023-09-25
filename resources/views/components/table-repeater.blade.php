@@ -47,13 +47,13 @@
                 <table class="w-full">
                     <thead @class([
                         'sr-only' => $hasHiddenHeader,
-                        'filament-table-repeater-header rounded-t-xl overflow-hidden border-b border-gray-950/5 dark:bg-transparent dark:border-white/20' => ! $hasHiddenHeader,
+                        'filament-table-repeater-header rounded-t-xl overflow-hidden border-b border-gray-950/5 dark:border-white/20' => ! $hasHiddenHeader,
                     ])>
                         <tr class="text-xs md:divide-x md:divide-gray-950/5 dark:md:divide-white/20">
                             @foreach ($headers as $key => $header)
                                 <th
                                     @class([
-                                        'filament-table-repeater-header-column px-3 py-2 font-medium text-left bg-gray-100 dark:text-gray-300 dark:bg-gray-900/60',
+                                        'filament-table-repeater-header-column px-3 py-2 font-medium text-left bg-gray-100 dark:text-gray-300 dark:bg-gray-900',
                                         'ltr:rounded-tl-xl rtl:rounded-tr-xl' => $loop->first,
                                         'ltr:rounded-tr-xl rtl:rounded-tl-xl' => $loop->last && ! $hasActions,
                                     ])
